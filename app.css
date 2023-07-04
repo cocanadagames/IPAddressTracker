@@ -1,0 +1,260 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-sizing: border-box;
+    /* border: 5px solid rgb(12, 240, 12); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.searchContainer h4 {
+    color: #FFF;
+    font-size: 32px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.286px;
+}
+
+.searchField input {
+    color: #2C2C2C;
+    font-size: 18px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    opacity: 0.5;
+}
+
+.searchField input,
+.searchField button {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.searchField {
+    /* border: 2px solid rgb(93, 93, 93); */
+    border-radius: 12px;
+    padding-left: 16px;
+    background-color: white;
+}
+
+.searchField button {
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 12px 12px 0px;
+    /* border: 2px solid rgb(15, 15, 15); */
+}
+
+.searchField input {
+    width: 500px;
+    height: 58px;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.detailsContainer {
+    min-width: 60%;
+    height: 140px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10);
+    /* border: 1px solid grey; */
+
+    position: absolute;
+    top: 160px;
+}
+
+#IPDetails,
+#LocDetails,
+#TZDetails,
+#ISPDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#IPDetails p,
+#LocDetails p,
+#TZDetails p,
+#ISPDetails p {
+    margin: 0px;
+    height: 40px;
+    width: 160px;
+    padding-left: 8px;
+
+    color: #2C2C2C;
+    font-size: 12px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+
+    opacity: 0.4986979067325592;
+}
+
+#IPDetails h4,
+#LocDetails h4,
+#TZDetails h4,
+#ISPDetails h4 {
+    margin: 0px;
+    height: 40px;
+    width: 160px;
+    padding-left: 8px;
+
+    color: #2C2C2C;
+    font-size: 16px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.232px;
+}
+
+hr {
+    height: 80%;
+    opacity: 0.15000000596046448;
+    background: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*************************************/
+/*************************************/
+/*************************************/
+
+.topImage {
+    box-sizing: border-box;
+    height: 280px;
+    width: 100vw;
+}
+
+.bottomMap {
+    box-sizing: border-box;
+
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    flex-grow: 2;
+}
+
+#map {
+    height: 100%;
+}
+
+/*************************************/
+/*************************************/
+/*************************************/
+
+@media (max-width:800px) {
+    .searchContainer h4 {
+        color: #FFF;
+        font-size: 26px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.232px;
+    }
+
+    .searchField input {
+        width: 70vw;
+        height: 58px;
+        background-color: white;
+    }
+
+    .detailsContainer {
+        width: 60vw;
+        height: auto;
+        margin-top: 40px;
+        padding: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10);
+        /* border: 1px solid grey; */
+
+        position: absolute;
+        top: 160px;
+    }
+
+    #IPDetails,
+    #LocDetails,
+    #TZDetails,
+    #ISPDetails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #IPDetails p,
+    #LocDetails p,
+    #TZDetails p,
+    #ISPDetails p {
+        margin: 0px;
+        margin-top: 8px;
+        height: auto;
+        width: 100%;
+        padding-left: 8px;
+        text-align: center;
+
+        font-size: 10px;
+    }
+
+    #IPDetails h4,
+    #LocDetails h4,
+    #TZDetails h4,
+    #ISPDetails h4 {
+        margin: 0px;
+        height: auto;
+        width: 100%;
+        padding-left: 8px;
+        text-align: center;
+
+        font-size: 14px;
+
+    }
+}
